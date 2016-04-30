@@ -1,0 +1,6 @@
+framework module Pods_SavoryPlus {
+  umbrella header "Pods-SavoryPlus-umbrella.h"
+
+  export *
+  module * { export * }
+}
