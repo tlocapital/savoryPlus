@@ -14,6 +14,7 @@ class RecipeDetailViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!    
     @IBOutlet weak var imageFood: UIImageView!
+    @IBOutlet weak var collectVFLayout: UICollectionViewFlowLayout!
     
     // Create a array of fake data from RecipeData.swift
     private var createFakeArrayData = RecipeData.createFakeDatas()
@@ -22,7 +23,8 @@ class RecipeDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let width = (UIScreen.mainScreen().bounds.width - 10)
+        self.collectVFLayout.itemSize = CGSize(width: width, height: width)
         self.imageFood.image = UIImage(named: tempFoodImageData)
     }
     

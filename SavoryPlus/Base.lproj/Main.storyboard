@@ -19,7 +19,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="czy-n8-ekb">
-                        <barButtonItem key="leftBarButtonItem" image="tool" id="o1v-pE-3cF"/>
+                        <barButtonItem key="leftBarButtonItem" image="tool" id="o1v-pE-3cF">
+                            <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="smK-Tt-9vf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -40,7 +42,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="aXX-70-Wzy">
-                        <barButtonItem key="leftBarButtonItem" image="tool" id="d79-FW-PDW"/>
+                        <barButtonItem key="leftBarButtonItem" image="tool" id="d79-FW-PDW">
+                            <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Lc-HB-Em9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -140,7 +144,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="美味食譜" id="yqf-i6-KAh">
-                        <barButtonItem key="leftBarButtonItem" image="tool" id="ikN-bg-DaD"/>
+                        <barButtonItem key="leftBarButtonItem" image="tool" id="ikN-bg-DaD">
+                            <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vzL-vO-FHt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -165,7 +171,7 @@
                                     <constraint firstAttribute="height" constant="200" id="7JB-se-eLS"/>
                                 </constraints>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CZP-E9-eDU">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CZP-E9-eDU">
                                 <rect key="frame" x="0.0" y="264" width="600" height="287"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0Ig-QT-BRz">
@@ -229,6 +235,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="collectVFLayout" destination="0Ig-QT-BRz" id="rk8-aT-1Xs"/>
                         <outlet property="collectionView" destination="CZP-E9-eDU" id="b63-YH-yPc"/>
                         <outlet property="imageFood" destination="oHu-Sn-0og" id="Rki-Zx-o83"/>
                     </connections>
