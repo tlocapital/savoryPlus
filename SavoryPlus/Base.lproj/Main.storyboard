@@ -28,6 +28,14 @@
             </objects>
             <point key="canvasLocation" x="-601" y="1227"/>
         </scene>
+        <!--StartsSetupHere-->
+        <scene sceneID="0FO-1F-xa8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SetupLinks" referencedIdentifier="StartsSetupHere" id="yy9-tl-5xe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PIV-1J-Mfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813.5" y="-946"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="XaX-j9-4PE">
             <objects>
@@ -44,6 +52,9 @@
                     <navigationItem key="navigationItem" id="aXX-70-Wzy">
                         <barButtonItem key="leftBarButtonItem" image="tool" id="d79-FW-PDW">
                             <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            <connections>
+                                <segue destination="yy9-tl-5xe" kind="show" id="9lg-7B-Q9K"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
